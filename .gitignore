@@ -1,9 +1,3 @@
-# Node.js dependencies
-node_modules/
-
-# Build output
-build/
-
 # IDE settings
 .vscode/
 .idea/
