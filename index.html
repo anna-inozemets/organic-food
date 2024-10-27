@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Organic food</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-notifications/3.1.0/style.min.css" integrity="sha512-OFAsS5R1Fx+HUK9/h/ChqnFDrJGI0Y7nO05gg9E+Mv1UAzvAMvQdtOuPLhgPgDPHOgKWBvbovxT3eQSCr5hlLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./build/css/main.min.css">
 </head>
 <body>
@@ -20,10 +22,10 @@
       </div>
       <nav class="nav">
         <ul class="df">
-          <li><a href="">About</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">News</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#news">News</a></li>
         </ul>
       </nav>
       <div class="features df align-c">
@@ -33,7 +35,7 @@
             <img src="./assets/images/search-icon.svg" alt="Search">
           </button>
         </div>
-        <div class="cart df align-c">
+        <div class="cart df align-c" id="cart-modal-btn" data-modal-id="cart-modal">
           <div class="cart-icon">
             <img src="./assets/images/cart-icon.svg" alt="Cart">
           </div>
@@ -59,23 +61,23 @@
       </div>
       <nav class="nav">
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">News</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#news">News</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <section class="sec-1 df fc justify-c">
+    <section class="sec-1 df fc justify-c" id="about">
       <div class="container">
         <article class="sec-1__content">
           <h2 class="yellowtail-text green-text sec-subtitle">
             100% Natural Food
           </h2>
           <h1>Choose the best <br> healthier way <br> of life</h1>
-          <a href="" class="df align-c call-to-action-link">
+          <a href="#shop" class="df align-c call-to-action-link">
             <span>Explore Now</span>
             <i class="fa-solid fa-circle-arrow-right"></i>
           </a>
@@ -105,328 +107,37 @@
           <h3 class="yellowtail-text green-text sec-subtitle">About Us</h3>
           <h2 class="sec-title">We Believe in Working Accredited Farmers</h2>
           <p>
-            Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley.
+            We prioritize partnerships with certified farmers who follow sustainable practices. This ensures that
+            our customers receive the freshest organic produce while supporting ethical farming methods.
           </p>
           <ul>
             <li>
               <span class="icon"><img src="./assets/images/sec-3-icon-1.png"></span>
               <span class="text">
                 <strong>Organic Foods Only</strong>
-                Simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                We are dedicated to offering only organic foods that are free from harmful elements.
               </span>
             </li>
             <li>
               <span class="icon"><img src="./assets/images/sec-3-icon-2.png"></span>
               <span class="text">
                 <strong>Quality Standards</strong>
-                Simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                We adhere to strict standards to ensure that every product meets the highest criteria.
               </span>
             </li>
           </ul>
-          <a href="" class="df align-c call-to-action-link">
+          <a href="#shop" class="df align-c call-to-action-link">
             <span>Shop Now</span>
             <img src="./assets/images/arrow.svg" alt="Explore Now">
           </a>
         </div>
       </div>
     </section>
-    <section class="sec-4 vertical-paddings">
+    <section class="sec-4 vertical-paddings" id="shop">
       <div class="container">
         <h3 class="yellowtail-text green-text sec-subtitle">Categories</h3>
         <h2 class="sec-title">Our Products</h2>
-        <div class="sec-4-cards product-cards">
-
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-4-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-        </div>
+        <div class="sec-4-cards product-cards"></div>
         <button class="df align-c call-to-action-link" id="load-more-cards">
           <span>Load More</span>
           <img src="./assets/images/arrow.svg" alt="Explore Now">
@@ -445,30 +156,33 @@
                 <span class="photo"><img src="./assets/images/sec-5-photo-1.jpg"></span>
                 <span class="rating">★★★★★</span>
                 <span class="description">
-                  Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the
-                  printing and typesetting industry. Lorem Ipsum has been.
+                  I absolutely love shopping at Econis! The selection of organic fruits and vegetables is
+                  fantastic, and everything tastes so fresh. It’s great to know I’m supporting local farmers.
+                  Highly recommend!
                 </span>
                 <span class="name">Sara Taylor</span>
                 <span class="role">Consumer</span>
               </li>
               <li class="glide__slide sec5-card">
-                <span class="photo"><img src="./assets/images/sec-5-photo-1.jpg"></span>
+                <span class="photo"><img src="./assets/images/sec-5-photo-2.jpg"></span>
                 <span class="rating">★★★★★</span>
                 <span class="description">
-                  Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the
-                  printing and typesetting industry. Lorem Ipsum has been.
+                  Econis is my go-to store for all things organic. The staff is friendly and knowledgeable,
+                  always ready to help with recommendations. I’ve noticed a significant difference in the
+                  quality of my meals since I started shopping here!
                 </span>
-                <span class="name">Sara Taylor</span>
+                <span class="name">Ien Parlentor</span>
                 <span class="role">Consumer</span>
               </li>
               <li class="glide__slide sec5-card">
-                <span class="photo"><img src="./assets/images/sec-5-photo-1.jpg"></span>
+                <span class="photo"><img src="./assets/images/sec-5-photo-3.jpg"></span>
                 <span class="rating">★★★★★</span>
                 <span class="description">
-                  Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the
-                  printing and typesetting industry. Lorem Ipsum has been.
+                  I can’t say enough good things about Econis! Their commitment to sustainability and quality
+                  is evident in every product. From delicious snacks to fresh produce, everything is top-notch.
+                  I feel good about what I’m buying!
                 </span>
-                <span class="name">Sara Taylor</span>
+                <span class="name">Mary Crimes</span>
                 <span class="role">Consumer</span>
               </li>
             </ul>
@@ -502,88 +216,15 @@
             <h3 class="yellowtail-text green-text sec-subtitle">Offer</h3>
             <h2 class="sec-title">We Offer Organic For You</h2>
           </div>
-          <a href="" class="df align-c call-to-action-link">
+          <a href="#shop" class="df align-c call-to-action-link">
             <span>View All Product</span>
             <img src="./assets/images/arrow.svg" alt="Explore Now">
           </a>
         </div>
-        <div class="sec-6-cards product-cards">
-          <div class="sec-6-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-6-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-6-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-          <div class="sec-6-card product-card">
-            <p class="badge">Vegetable</p>
-            <div class="photo">
-              <img src="./assets/images/product-photo-1.png">
-            </div>
-            <p class="title">Calabrese Broccoli</p>
-            <div class="info df align-e justify-b">
-              <p class="price">
-                <span class="full">$20.00</span>
-                <span class="discount">$13.00</span>
-              </p>
-              <div class="rating">
-                <span class="default">★★★★★</span>
-                <span class="active">★★★★★</span>
-              </div>
-            </div>
-            <a href="" class="buy">Add to cart</a>
-          </div>
-        </div>
+        <div class="sec-6-cards product-cards"></div>
       </div>
     </section>
-    <section class="sec-7">
+    <section class="sec-7" id="projects">
       <div class="sec-7-photo">
         <img src="./assets/images/sec-7-img.png" alt="Eco Friendly">
       </div>
@@ -594,28 +235,28 @@
           <li>
             <strong>Start with Our Company First</strong>
             <span>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium.
-              Sed ut perspiciatis.
+              Join us in creating a healthier future. Our mission is to provide high-quality organic goods and
+              support eco-friendly practices for everyone.
             </span>
           </li>
           <li>
             <strong>Learn How to Grow Yourself</strong>
             <span>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium.
-              Sed ut perspiciatis.
+              We believe knowledge is power. Explore our resources and workshops to learn how to grow your own
+              vegetables and fruits, guided by our team of experts.
             </span>
           </li>
           <li>
             <strong>Farming Strategies of Today</strong>
             <span>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium.
-              Sed ut perspiciatis.
+              Modern farming is evolving with innovative and sustainable techniques. Stay informed about best
+              practices.
             </span>
           </li>
         </ul>
       </div>
     </section>
-    <section class="sec-8 vertical-paddings">
+    <section class="sec-8 vertical-paddings" id="news">
       <div class="container">
         <h3 class="yellowtail-text green-text sec-subtitle">News</h3>
         <h2 class="sec-title">Discover weekly content about organic food, & more</h2>
@@ -715,6 +356,22 @@
           </p>
         </div>
       </article>
+      <article class="modal" id="cart-modal">
+        <button class="modal-close-btn"><span></span><span></span></button>
+        <div class="modal-content">
+          <h3>The contents of your shopping cart</h3>
+          <ul>
+            <li data-product-id="1">
+              <span>product name</span>
+              <i class="fa-regular fa-circle-xmark fa-lg" style="color: #274c5b;"></i>
+            </li>
+            <li>
+              <span>You product name</span>
+              <i class="fa-regular fa-circle-xmark fa-lg" style="color: #274c5b;"></i>
+            </li>
+          </ul>
+        </div>
+      </article>
     </section>
   </main>
   <footer class="vertical-paddings">
@@ -743,6 +400,7 @@
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/awesome-notifications/3.1.0/index.var.min.js" integrity="sha512-gS8jKzzlhaUACXtBbUmj9/ITyZEAMM5TNwcL2Y226Xh6J/xH8mYzm6C/tHFkRVbi+tV1uyW7pIMSTehhBt6sBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./build/js/app.min.js"></script>
 </body>
 </html>

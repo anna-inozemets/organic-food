@@ -72,6 +72,7 @@ header {
       padding: 5px;
       border-radius: 36px;
       border: solid 1px #E0E0E0;
+      cursor: pointer;
 
       .cart-icon {
         width: 50px;
@@ -203,7 +204,19 @@ header {
       }
 
       .cart {
-        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: $white-color;
+        z-index: 2;
+
+        .cart-icon {
+          margin-right: 0;
+        }
+
+        p {
+          display: none;
+        }
       }
     }
   }
